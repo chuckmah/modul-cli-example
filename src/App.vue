@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" class="m-u--app-body">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <m-button icon-name="m-svg__close-clear">A Button</m-button>
   </div>
 </template>
 
@@ -18,12 +19,8 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+$m-font-path: '~@ulaval/modul-components/dist/assets/fonts/';
+@import "~@ulaval/modul-components/dist/styles/main.scss";
+
+
 </style>
