@@ -1,8 +1,10 @@
 <template>
   <div id="app" class="m-u--app-body">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-    <m-button icon-name="m-svg__close-clear">A Button</m-button>
+
+<!-- 
+      <img alt="Vue logo" src="./assets/logo.png"> -->
+      <HelloWorld msg="Welcome to Your Vue.js + TypeScript + MODUL App"/>
+
   </div>
 </template>
 
@@ -15,11 +17,16 @@ import HelloWorld from './components/HelloWorld.vue';
     HelloWorld,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+
+}
 </script>
 
 <style lang="scss">
-$m-font-path: '~@ulaval/modul-components/dist/assets/fonts/';
+// modul sass overrides here.
+
+$m-font-path: '~@ulaval/modul-components/dist/assets/fonts/'; //this is required. 
+
 @import "~@ulaval/modul-components/dist/styles/main.scss";
 
 
