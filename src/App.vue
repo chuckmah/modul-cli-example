@@ -8,6 +8,7 @@
       <fenetres></fenetres>
       <navigation></navigation>
       <tableaux></tableaux>
+      <formulaire></formulaire>
   </div>
 </template>
 
