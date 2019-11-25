@@ -1,20 +1,35 @@
 <template>
   <div id="app" class="m-u--app-body">
 
-<!-- 
-      <img alt="Vue logo" src="./assets/logo.png"> -->
-      <HelloWorld msg="Welcome to Your Vue.js + TypeScript + MODUL App"/>
 
+      <HelloWorld msg="Welcome to Your Vue.js + TypeScript + MODUL App"/>
+      <boutons></boutons>
+      <contenu></contenu>
+      <fenetres></fenetres>
+      <navigation></navigation>
+      <tableaux></tableaux>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
+import Boutons from './components/Boutons.vue';
+import Contenu from './components/Contenu.vue';
+import Fenetres from './components/Fenetres.vue';
+import Formulaire from './components/Formulaire.vue';
+import Navigation from './components/Navigation.vue';
+import Tableaux from './components/Tableaux.vue';
 
 @Component({
   components: {
     HelloWorld,
+    Boutons,
+    Contenu,
+    Fenetres,
+    Formulaire,
+    Navigation,
+    Tableaux,
   },
 })
 export default class App extends Vue {
