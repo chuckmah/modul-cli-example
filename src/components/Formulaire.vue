@@ -28,12 +28,12 @@
                               :key="type"
                              :value="type"
                              :label="type"></m-dropdown-item>
-        </m-dropdown> <br />
+        </m-dropdown> <br />  
       </div>
 
       <div>
           <h3 class="m-u--h4">Datepicker example</h3>
-          <m-datepicker v-m-control="birthdateField"
+           <m-datepicker v-m-control="birthdateField"
                       v-model="birthdateField.value"
                       label="Birthdate"
                       min="1900-01-01"
@@ -41,7 +41,7 @@
                       :required-marker="true"
                       :error="birthdateField.hasError()"
                       :error-message="birthdateField.errorMessage">
-        </m-datepicker> <br />
+        </m-datepicker> <br /> 
       </div>
 
               <p class="m-u--margin-top--l m-u--margin-bottom--l">
@@ -49,7 +49,7 @@
             <m-button type="reset"
                       skin="secondary">Reset</m-button>
         </p>
-    </m-form>
+   </m-form> 
 
   </div>
 </template>
@@ -57,7 +57,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 // tslint:disable-next-line:max-line-length
-import { MColumnTable, FormGroup, FormControl, RequiredValidator, MaxLengthValidator, AbstractControl, MinLengthValidator } from '@ulaval/modul-components';
+import { MColumnTable, FormGroup, FormControl, RequiredValidator, MaxLengthValidator, AbstractControl, MinLengthValidator, MToggleButton } from '@ulaval/modul-components';
 
 @Component
 export default class Formulaire extends Vue {
@@ -78,6 +78,12 @@ export default class Formulaire extends Vue {
                     ]),
             },
         );
+
+
+    private toogleButtons: MToggleButton[] = [{
+        id: 'id',
+        title: 'title',
+    }];
 
     get nameField(): AbstractControl<string> {
         return this.formGroup.getControl<string>('name');
